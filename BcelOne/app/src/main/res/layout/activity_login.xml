@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/headbar"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/call"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/infoText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageButton5"
+                android:layout_centerHorizontal="true"
+                android:text="ຕິດຕໍ່"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:fontFamily="@font/phetsarath_ot"
+                />
+
+            <TextView
+                android:id="@+id/infoText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/infoText2"
+                android:layout_centerHorizontal="true"
+                android:text="ພະນັກງານ"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:fontFamily="@font/phetsarath_ot"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ct"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                android:id="@+id/infoText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:text="ທະນາຄານໃນມືຖືເພື່ອທຸກຄົນ"
+                android:textSize="10sp"
+                android:fontFamily="@font/phetsarath_ot"
+                android:textColor="#AFAFAF"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/translate"
+                android:scaleType="fitCenter"
+
+                />
+
+            <TextView
+                android:id="@+id/infoText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageButton1"
+                android:layout_centerHorizontal="true"
+                android:text="ພາສາ"
+                android:fontFamily="@font/phetsarath_ot"
+                android:textSize="11sp"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ອີເມວ, ເບີໂທ, ຫຼື ເລກບັດ :"
+        android:fontFamily="@font/phetsarath_ot"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/customedittext"
+        android:textColor="#000000"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ລະຫັດຜ່ານ :"
+        android:fontFamily="@font/phetsarath_ot"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/customedittext"
+        android:textColor="#000000"
+        android:layout_marginHorizontal="25dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ຈື່ອີເມວ/ເບີໂທ/ເລກບັດ"
+        android:fontFamily="@font/phetsarath_ot"
+        android:textSize="12sp"
+
+        />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ເຂົ້າສູ່ລະບົບ"
+        android:fontFamily="@font/phetsarath_ot"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background_color"
+        android:layout_marginHorizontal="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onForgotPasswordClicked"
+            android:text="ລືມລະຫັດຜ່ານ"
+            android:fontFamily="@font/phetsarath_ot"
+            android:textColor="#AFAFAF"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/infoText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="06"
+                    android:textColor="@color/bluedark"
+                    android:textSize="55sp"
+                    android:fontFamily="@font/phetsarath_ot"
+                    />
+
+                <TextView
+                    android:id="@+id/infoText32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/infoText22"
+                    android:layout_centerHorizontal="true"
+                    android:text="01/2024"
+                    android:textStyle="bold"
+                    android:textColor="@color/bluedark"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/phetsarath_ot"
+                    android:layout_marginTop="5dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginStart="100dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/infoText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ວັນພຸດ, ແຮມ 10 ຄໍ່າ"
+                    android:textStyle="bold"
+                    android:textColor="@color/greendark"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/phetsarath_ot"
+
+                    />
+                <TextView
+                    android:id="@+id/infoText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ເດືອນ 1 ລາວ, ປີເຖາະ 2566"
+                    android:textStyle="bold"
+                    android:textColor="@color/greendark"
+                    android:layout_below="@id/infoText10"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/phetsarath_ot"
+
+                    />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/infoText11"
+                    android:layout_marginHorizontal="30dp"
+                    android:text="ເບີ່ງປະຕິທິນ"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/phetsarath_ot"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/full_screen"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemTextColor="@color/black"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu"
+        app:labelVisibilityMode="labeled"/>
+
+
+</LinearLayout>

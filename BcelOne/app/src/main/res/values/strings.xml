@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="Status">InCome</string>
+    <string name="Date">01/01/2024 12:01:01</string>
+    <string name="Des">Description</string>
+    <string name="Money">999,999</string>
+</resources>
